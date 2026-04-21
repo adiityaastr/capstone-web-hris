@@ -1,0 +1,13 @@
+---
+description: Core workflow rules for this HRIS project
+alwaysApply: true
+---
+
+# HRIS Project Core Rules
+
+- Preserve existing behavior unless user asks for refactor.
+- Keep changes focused; avoid broad rewrites.
+- Align frontend behavior with backend API contracts.
+- After substantial edits, run `npm run lint` and `npm run build`.
+- If schema or seed changes, run `npm run db:setup`.
+- Never commit or expose credentials from `.env`.

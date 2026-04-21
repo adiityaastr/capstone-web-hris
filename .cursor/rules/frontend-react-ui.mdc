@@ -1,0 +1,13 @@
+---
+description: React UI standards for src files
+globs: src/**/*.{js,jsx,css}
+alwaysApply: false
+---
+
+# Frontend React UI Rules
+
+- Keep components readable: clear state names and small helper functions.
+- Reuse existing style patterns from `App.css` before adding new variants.
+- Prefer consistent UX feedback for actions (loading, success, error).
+- For tables/forms, keep labels and actions explicit for HR/Finance users.
+- Validate user input on the client (numeric fields, required fields).

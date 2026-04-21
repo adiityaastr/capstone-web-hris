@@ -1,0 +1,13 @@
+---
+description: Payroll domain safety and UX rules
+globs: {src/**/*,backend/src/**/*}
+alwaysApply: false
+---
+
+# Payroll Domain Rules
+
+- Treat payroll data as sensitive; avoid unnecessary data exposure.
+- Keep payroll run lifecycle explicit: draft, review/approve, finalized, published.
+- Recalculate and persist run totals after item-level changes.
+- For salary edits, enforce non-negative numeric validation.
+- In UI, show clear status badges and operation feedback for payroll actions.

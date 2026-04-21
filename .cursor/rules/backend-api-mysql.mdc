@@ -1,0 +1,14 @@
+---
+description: Express + MySQL API conventions for backend
+globs: backend/src/**/*.js
+alwaysApply: false
+---
+
+# Backend API Rules
+
+- Keep endpoint style RESTful and response shape consistent.
+- Always return actionable error messages in `message`.
+- Protect sensitive routes with `authRequired` and role checks.
+- Use parameterized queries only; never build raw SQL with string concat.
+- Preserve backward compatibility for active endpoints unless user asks otherwise.
+- Keep business calculations explicit and easy to audit.
