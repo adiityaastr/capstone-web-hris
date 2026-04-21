@@ -5,6 +5,13 @@ Implementasi fase 1 untuk HRIS:
 - Backend API (Node.js + Express + MySQL + JWT)
 - Modul utama: Auth, Employee, Attendance, Leave, Payroll, Reporting
 
+## Setup Cepat
+
+Untuk panduan setup lengkap (clone, env, db, run, troubleshooting):
+- `SETUP.md`
+- Windows PowerShell: `docs/setup-windows.md`
+- Linux/macOS: `docs/setup-unix.md`
+
 ## 1) Setup Environment
 
 1. Salin `backend/.env.example` menjadi `backend/.env`
