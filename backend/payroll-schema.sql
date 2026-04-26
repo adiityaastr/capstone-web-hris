@@ -39,7 +39,8 @@ CREATE TABLE IF NOT EXISTS employee_salary_component_values (
   created_at DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
   updated_at DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
   FOREIGN KEY (salary_profile_id) REFERENCES employee_salary_profiles(id),
-  FOREIGN KEY (component_id) REFERENCES payroll_components(id)
+  FOREIGN KEY (component_id) REFERENCES payroll_components(id),
+  UNIQUE KEY uq_profile_component (salary_profile_id, component_id)
 );
 
 CREATE TABLE IF NOT EXISTS payroll_variable_inputs (

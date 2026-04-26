@@ -314,6 +314,21 @@ th {
   color: #b66b00;
 }
 
+.status.pending {
+  background: #fff8e1;
+  color: #8a6d00;
+}
+
+.status.approved {
+  background: #e9fff2;
+  color: #1f9254;
+}
+
+.status.rejected {
+  background: #fff1f1;
+  color: #a73636;
+}
+
 .timeline {
   list-style: none;
   margin: 0;
@@ -493,6 +508,16 @@ th {
   margin-top: 10px;
   color: #2e3d97;
   font-weight: 500;
+}
+
+.action-cell {
+  display: flex;
+  gap: 6px;
+}
+
+td.error {
+  color: #cb1c1c;
+  font-weight: 600;
 }
 
 .salary-form {
@@ -675,6 +700,52 @@ th {
   color: #26306a;
 }
 
+.charts-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  gap: 20px;
+  margin: 20px 0;
+}
+
+.chart-container {
+  background: #fcfdff;
+  border: 1px solid #e7ebfb;
+  border-radius: 12px;
+  padding: 16px;
+  box-shadow: 0 2px 8px rgba(31, 49, 113, 0.05);
+}
+
+.chart-container h4 {
+  margin: 0 0 12px 0;
+  color: #1d2340;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.chart-container table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 12px;
+}
+
+.chart-container table th,
+.chart-container table td {
+  padding: 10px 12px;
+  text-align: left;
+  border-bottom: 1px solid #e7ebfb;
+  font-size: 13px;
+}
+
+.chart-container table th {
+  background: #f0f3f9;
+  font-weight: 600;
+  color: #4b5587;
+}
+
+.chart-container table tr:hover {
+  background: #f9fafd;
+}
+
 @keyframes overlay-fade-in {
   from {
     opacity: 0;
@@ -712,6 +783,9 @@ th {
   .table-panel {
     grid-row: auto;
   }
+  .charts-grid {
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  }
 }
 
 @media (max-width: 900px) {
@@ -733,6 +807,9 @@ th {
     grid-template-columns: 1fr;
   }
   .quick-grid {
+    grid-template-columns: 1fr;
+  }
+  .charts-grid {
     grid-template-columns: 1fr;
   }
   .salary-form {
